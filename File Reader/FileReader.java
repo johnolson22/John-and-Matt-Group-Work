@@ -27,6 +27,20 @@ public class FileReader
       
    }
    
+   public String toString()
+   {
+      String result = "";
+      for(int row = 0; row < rows; row++)
+      {
+         for(int col = 0; col < cols; col++)
+         {
+            result += pic[row][col];
+         }
+         result += '\n';
+      }
+      return result;
+   }
+   
    
    
    
